@@ -1,15 +1,15 @@
 //
-//  entertainmentListViewController.swift
+//  HealthAndMedicalListViewController.swift
 //  Panda
 //
-//  Created by 矢野史洋 on 2016/08/03.
+//  Created by 矢野史洋 on 2016/08/04.
 //  Copyright © 2016年 矢野史洋. All rights reserved.
 //
 
 import UIKit
 
-class EntertainmentListViewController: BaseQuestionnaireListViewController {
-    
+class HealthAndMedicalListViewController: BaseQuestionnaireListViewController {
+
     @IBOutlet weak var questionnaireCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
