@@ -30,6 +30,8 @@
 		E765BB6F1D523E43002E9912 /* EntertainmentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB6E1D523E43002E9912 /* EntertainmentListViewController.xib */; };
 		E765BB741D5249E2002E9912 /* HealthAndMedicalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB731D5249E2002E9912 /* HealthAndMedicalListViewController.swift */; };
 		E765BB761D524A33002E9912 /* HealthAndMedicalListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB751D524A33002E9912 /* HealthAndMedicalListViewController.xib */; };
+		E765BB781D524DB6002E9912 /* ComputerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB771D524DB6002E9912 /* ComputerListViewController.swift */; };
+		E765BB7A1D524E1E002E9912 /* ComputerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB791D524E1E002E9912 /* ComputerListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		E765BB6E1D523E43002E9912 /* EntertainmentListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntertainmentListViewController.xib; sourceTree = "<group>"; };
 		E765BB731D5249E2002E9912 /* HealthAndMedicalListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthAndMedicalListViewController.swift; sourceTree = "<group>"; };
 		E765BB751D524A33002E9912 /* HealthAndMedicalListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HealthAndMedicalListViewController.xib; sourceTree = "<group>"; };
+		E765BB771D524DB6002E9912 /* ComputerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerListViewController.swift; sourceTree = "<group>"; };
+		E765BB791D524E1E002E9912 /* ComputerListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComputerListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 				E765BB621D523B03002E9912 /* BaseQuestionnaireListViewController.swift */,
 				E765BB6C1D523DA9002E9912 /* EntertainmentListViewController.swift */,
 				E765BB731D5249E2002E9912 /* HealthAndMedicalListViewController.swift */,
+				E765BB771D524DB6002E9912 /* ComputerListViewController.swift */,
 				E765BB301D5222BC002E9912 /* ViewController.swift */,
 				E765BB451D52263E002E9912 /* ViewController2.swift */,
 				E765BB471D522650002E9912 /* ViewController3.swift */,
@@ -160,6 +165,7 @@
 			children = (
 				E765BB6E1D523E43002E9912 /* EntertainmentListViewController.xib */,
 				E765BB751D524A33002E9912 /* HealthAndMedicalListViewController.xib */,
+				E765BB791D524E1E002E9912 /* ComputerListViewController.xib */,
 				E765BB721D524957002E9912 /* Cell */,
 			);
 			name = View;
@@ -235,6 +241,7 @@
 			files = (
 				E765BB541D522AD0002E9912 /* TabCollectionCell.xib in Resources */,
 				E765BB391D5222BC002E9912 /* LaunchScreen.storyboard in Resources */,
+				E765BB7A1D524E1E002E9912 /* ComputerListViewController.xib in Resources */,
 				E765BB361D5222BC002E9912 /* Assets.xcassets in Resources */,
 				E765BB691D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.xib in Resources */,
 				E765BB611D523448002E9912 /* TabPageViewController.xib in Resources */,
@@ -261,6 +268,7 @@
 				E765BB631D523B03002E9912 /* BaseQuestionnaireListViewController.swift in Sources */,
 				E765BB441D5225A6002E9912 /* MainTabbarController.swift in Sources */,
 				E765BB6D1D523DA9002E9912 /* EntertainmentListViewController.swift in Sources */,
+				E765BB781D524DB6002E9912 /* ComputerListViewController.swift in Sources */,
 				E765BB5B1D522B16002E9912 /* TabCollectionCell.swift in Sources */,
 				E765BB6B1D523CCB002E9912 /* Datacontent.swift in Sources */,
 				E765BB581D522AD0002E9912 /* TabView.swift in Sources */,
