@@ -15,6 +15,11 @@
 		E765BB441D5225A6002E9912 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB431D5225A6002E9912 /* MainTabbarController.swift */; };
 		E765BB461D52263E002E9912 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB451D52263E002E9912 /* ViewController2.swift */; };
 		E765BB481D522650002E9912 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB471D522650002E9912 /* ViewController3.swift */; };
+		E765BB541D522AD0002E9912 /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB4E1D522AD0002E9912 /* TabCollectionCell.xib */; };
+		E765BB551D522AD0002E9912 /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB4F1D522AD0002E9912 /* TabPageOption.swift */; };
+		E765BB581D522AD0002E9912 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB521D522AD0002E9912 /* TabView.swift */; };
+		E765BB591D522AD0002E9912 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB531D522AD0002E9912 /* TabView.xib */; };
+		E765BB5B1D522B16002E9912 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB5A1D522B16002E9912 /* TabCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		E765BB431D5225A6002E9912 /* MainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabbarController.swift; path = ../MainTabbarController.swift; sourceTree = "<group>"; };
 		E765BB451D52263E002E9912 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		E765BB471D522650002E9912 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		E765BB4E1D522AD0002E9912 /* TabCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabCollectionCell.xib; sourceTree = "<group>"; };
+		E765BB4F1D522AD0002E9912 /* TabPageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageOption.swift; sourceTree = "<group>"; };
+		E765BB521D522AD0002E9912 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		E765BB531D522AD0002E9912 /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabView.xib; sourceTree = "<group>"; };
+		E765BB5A1D522B16002E9912 /* TabCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +72,8 @@
 			children = (
 				E765BB2E1D5222BC002E9912 /* AppDelegate.swift */,
 				E765BB421D52256F002E9912 /* Utility */,
-				E765BB301D5222BC002E9912 /* ViewController.swift */,
-				E765BB451D52263E002E9912 /* ViewController2.swift */,
-				E765BB471D522650002E9912 /* ViewController3.swift */,
-				E765BB431D5225A6002E9912 /* MainTabbarController.swift */,
+				E765BB4D1D522A62002E9912 /* TabPage */,
+				E765BB491D522852002E9912 /* Controller */,
 				E765BB351D5222BC002E9912 /* Assets.xcassets */,
 				E765BB371D5222BC002E9912 /* LaunchScreen.storyboard */,
 				E765BB3A1D5222BC002E9912 /* Info.plist */,
@@ -79,6 +87,45 @@
 				E765BB401D522549002E9912 /* UIColor.swift */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		E765BB491D522852002E9912 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E765BB4B1D52289E002E9912 /* View */,
+				E765BB4A1D52287A002E9912 /* Tabbar */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E765BB4A1D52287A002E9912 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				E765BB431D5225A6002E9912 /* MainTabbarController.swift */,
+			);
+			name = Tabbar;
+			sourceTree = "<group>";
+		};
+		E765BB4B1D52289E002E9912 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E765BB301D5222BC002E9912 /* ViewController.swift */,
+				E765BB451D52263E002E9912 /* ViewController2.swift */,
+				E765BB471D522650002E9912 /* ViewController3.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E765BB4D1D522A62002E9912 /* TabPage */ = {
+			isa = PBXGroup;
+			children = (
+				E765BB4E1D522AD0002E9912 /* TabCollectionCell.xib */,
+				E765BB5A1D522B16002E9912 /* TabCollectionCell.swift */,
+				E765BB4F1D522AD0002E9912 /* TabPageOption.swift */,
+				E765BB521D522AD0002E9912 /* TabView.swift */,
+				E765BB531D522AD0002E9912 /* TabView.xib */,
+			);
+			name = TabPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +187,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E765BB541D522AD0002E9912 /* TabCollectionCell.xib in Resources */,
 				E765BB391D5222BC002E9912 /* LaunchScreen.storyboard in Resources */,
 				E765BB361D5222BC002E9912 /* Assets.xcassets in Resources */,
+				E765BB591D522AD0002E9912 /* TabView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,10 +202,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E765BB461D52263E002E9912 /* ViewController2.swift in Sources */,
+				E765BB551D522AD0002E9912 /* TabPageOption.swift in Sources */,
 				E765BB311D5222BC002E9912 /* ViewController.swift in Sources */,
 				E765BB481D522650002E9912 /* ViewController3.swift in Sources */,
 				E765BB411D522549002E9912 /* UIColor.swift in Sources */,
 				E765BB441D5225A6002E9912 /* MainTabbarController.swift in Sources */,
+				E765BB5B1D522B16002E9912 /* TabCollectionCell.swift in Sources */,
+				E765BB581D522AD0002E9912 /* TabView.swift in Sources */,
 				E765BB2F1D5222BC002E9912 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +353,7 @@
 				E765BB3F1D5222BC002E9912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
