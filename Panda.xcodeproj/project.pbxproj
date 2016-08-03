@@ -22,6 +22,12 @@
 		E765BB5B1D522B16002E9912 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB5A1D522B16002E9912 /* TabCollectionCell.swift */; };
 		E765BB5F1D52340F002E9912 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB5E1D52340F002E9912 /* TabPageViewController.swift */; };
 		E765BB611D523448002E9912 /* TabPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB601D523448002E9912 /* TabPageViewController.xib */; };
+		E765BB631D523B03002E9912 /* BaseQuestionnaireListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB621D523B03002E9912 /* BaseQuestionnaireListViewController.swift */; };
+		E765BB681D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB661D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.swift */; };
+		E765BB691D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB671D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.xib */; };
+		E765BB6B1D523CCB002E9912 /* Datacontent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB6A1D523CCB002E9912 /* Datacontent.swift */; };
+		E765BB6D1D523DA9002E9912 /* EntertainmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB6C1D523DA9002E9912 /* EntertainmentListViewController.swift */; };
+		E765BB6F1D523E43002E9912 /* EntertainmentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB6E1D523E43002E9912 /* EntertainmentListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,12 @@
 		E765BB5A1D522B16002E9912 /* TabCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCollectionCell.swift; sourceTree = "<group>"; };
 		E765BB5E1D52340F002E9912 /* TabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
 		E765BB601D523448002E9912 /* TabPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabPageViewController.xib; sourceTree = "<group>"; };
+		E765BB621D523B03002E9912 /* BaseQuestionnaireListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseQuestionnaireListViewController.swift; sourceTree = "<group>"; };
+		E765BB661D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseQuestionnaireListCollectionViewCell.swift; sourceTree = "<group>"; };
+		E765BB671D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseQuestionnaireListCollectionViewCell.xib; sourceTree = "<group>"; };
+		E765BB6A1D523CCB002E9912 /* Datacontent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datacontent.swift; sourceTree = "<group>"; };
+		E765BB6C1D523DA9002E9912 /* EntertainmentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntertainmentListViewController.swift; sourceTree = "<group>"; };
+		E765BB6E1D523E43002E9912 /* EntertainmentListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntertainmentListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				E765BB401D522549002E9912 /* UIColor.swift */,
+				E765BB6A1D523CCB002E9912 /* Datacontent.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -113,6 +126,11 @@
 		E765BB4B1D52289E002E9912 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E765BB661D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.swift */,
+				E765BB671D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.xib */,
+				E765BB6E1D523E43002E9912 /* EntertainmentListViewController.xib */,
+				E765BB621D523B03002E9912 /* BaseQuestionnaireListViewController.swift */,
+				E765BB6C1D523DA9002E9912 /* EntertainmentListViewController.swift */,
 				E765BB301D5222BC002E9912 /* ViewController.swift */,
 				E765BB451D52263E002E9912 /* ViewController2.swift */,
 				E765BB471D522650002E9912 /* ViewController3.swift */,
@@ -196,8 +214,10 @@
 				E765BB541D522AD0002E9912 /* TabCollectionCell.xib in Resources */,
 				E765BB391D5222BC002E9912 /* LaunchScreen.storyboard in Resources */,
 				E765BB361D5222BC002E9912 /* Assets.xcassets in Resources */,
+				E765BB691D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.xib in Resources */,
 				E765BB611D523448002E9912 /* TabPageViewController.xib in Resources */,
 				E765BB591D522AD0002E9912 /* TabView.xib in Resources */,
+				E765BB6F1D523E43002E9912 /* EntertainmentListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,9 +233,13 @@
 				E765BB311D5222BC002E9912 /* ViewController.swift in Sources */,
 				E765BB5F1D52340F002E9912 /* TabPageViewController.swift in Sources */,
 				E765BB481D522650002E9912 /* ViewController3.swift in Sources */,
+				E765BB681D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.swift in Sources */,
 				E765BB411D522549002E9912 /* UIColor.swift in Sources */,
+				E765BB631D523B03002E9912 /* BaseQuestionnaireListViewController.swift in Sources */,
 				E765BB441D5225A6002E9912 /* MainTabbarController.swift in Sources */,
+				E765BB6D1D523DA9002E9912 /* EntertainmentListViewController.swift in Sources */,
 				E765BB5B1D522B16002E9912 /* TabCollectionCell.swift in Sources */,
+				E765BB6B1D523CCB002E9912 /* Datacontent.swift in Sources */,
 				E765BB581D522AD0002E9912 /* TabView.swift in Sources */,
 				E765BB2F1D5222BC002E9912 /* AppDelegate.swift in Sources */,
 			);

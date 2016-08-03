@@ -29,7 +29,7 @@ class MainTabbarController: UITabBarController {
         fourthView = ViewController()
         
         let tc = TabPageViewController()
-        let vc1 = ViewController()
+        let vc1 = EntertainmentListViewController()
         let vc2 = UIViewController()
         vc2.view.backgroundColor = UIColor(red: 252/255, green: 150/255, blue: 149/255, alpha: 1.0)
         let vc3 = UIViewController()
@@ -38,7 +38,7 @@ class MainTabbarController: UITabBarController {
         vc4.view.backgroundColor = UIColor(red: 149/255, green: 252/255, blue: 197/255, alpha: 1.0)
         let vc5 = UIViewController()
         vc5.view.backgroundColor = UIColor(red: 252/255, green: 182/255, blue: 106/255, alpha: 1.0)
-        tc.tabItems = [(vc1, "Mon."), (vc2, "Tue."), (vc3, "Wed."), (vc4, "Thu."), (vc5, "Fri.")]
+        tc.tabItems = [(vc1, "エンタメ"), (vc2, "Tue."), (vc3, "Wed."), (vc4, "Thu."), (vc5, "Fri.")]
         tc.isInfinity = true
         var option = TabPageOption()
         option.currentColor = UIColor(red: 246/255, green: 175/255, blue: 32/255, alpha: 1.0)
