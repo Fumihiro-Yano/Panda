@@ -11,6 +11,10 @@
 		E765BB311D5222BC002E9912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB301D5222BC002E9912 /* ViewController.swift */; };
 		E765BB361D5222BC002E9912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E765BB351D5222BC002E9912 /* Assets.xcassets */; };
 		E765BB391D5222BC002E9912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E765BB371D5222BC002E9912 /* LaunchScreen.storyboard */; };
+		E765BB411D522549002E9912 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB401D522549002E9912 /* UIColor.swift */; };
+		E765BB441D5225A6002E9912 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB431D5225A6002E9912 /* MainTabbarController.swift */; };
+		E765BB461D52263E002E9912 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB451D52263E002E9912 /* ViewController2.swift */; };
+		E765BB481D522650002E9912 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB471D522650002E9912 /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		E765BB351D5222BC002E9912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E765BB381D5222BC002E9912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E765BB3A1D5222BC002E9912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E765BB401D522549002E9912 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E765BB431D5225A6002E9912 /* MainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabbarController.swift; path = ../MainTabbarController.swift; sourceTree = "<group>"; };
+		E765BB451D52263E002E9912 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		E765BB471D522650002E9912 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +61,24 @@
 			isa = PBXGroup;
 			children = (
 				E765BB2E1D5222BC002E9912 /* AppDelegate.swift */,
+				E765BB421D52256F002E9912 /* Utility */,
 				E765BB301D5222BC002E9912 /* ViewController.swift */,
+				E765BB451D52263E002E9912 /* ViewController2.swift */,
+				E765BB471D522650002E9912 /* ViewController3.swift */,
+				E765BB431D5225A6002E9912 /* MainTabbarController.swift */,
 				E765BB351D5222BC002E9912 /* Assets.xcassets */,
 				E765BB371D5222BC002E9912 /* LaunchScreen.storyboard */,
 				E765BB3A1D5222BC002E9912 /* Info.plist */,
 			);
 			path = Panda;
+			sourceTree = "<group>";
+		};
+		E765BB421D52256F002E9912 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E765BB401D522549002E9912 /* UIColor.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E765BB461D52263E002E9912 /* ViewController2.swift in Sources */,
 				E765BB311D5222BC002E9912 /* ViewController.swift in Sources */,
+				E765BB481D522650002E9912 /* ViewController3.swift in Sources */,
+				E765BB411D522549002E9912 /* UIColor.swift in Sources */,
+				E765BB441D5225A6002E9912 /* MainTabbarController.swift in Sources */,
 				E765BB2F1D5222BC002E9912 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
