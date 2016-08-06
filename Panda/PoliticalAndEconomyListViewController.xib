@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PoliticalAndEconomyListViewController" customModule="Panda" customModuleProvider="target">
+            <connections>
+                <outlet property="questionnaireCollectionView" destination="moU-Kn-DQM" id="t6T-Z2-C5i"/>
+                <outlet property="view" destination="umT-BT-7UH" id="hWk-o2-0dX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="umT-BT-7UH">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="moU-Kn-DQM">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="uac-8b-QIO">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="moU-Kn-DQM" secondAttribute="trailing" id="6pJ-8S-R1b"/>
+                <constraint firstItem="moU-Kn-DQM" firstAttribute="top" secondItem="umT-BT-7UH" secondAttribute="top" id="T0b-CW-LUj"/>
+                <constraint firstAttribute="bottom" secondItem="moU-Kn-DQM" secondAttribute="bottom" id="ZMz-uE-BIU"/>
+                <constraint firstItem="moU-Kn-DQM" firstAttribute="leading" secondItem="umT-BT-7UH" secondAttribute="leading" id="uyW-js-43R"/>
+                <constraint firstItem="moU-Kn-DQM" firstAttribute="centerX" secondItem="umT-BT-7UH" secondAttribute="centerX" id="vS1-Li-U3T"/>
+            </constraints>
+            <point key="canvasLocation" x="341" y="409"/>
+        </view>
+    </objects>
+</document>

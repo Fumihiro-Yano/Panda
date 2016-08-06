@@ -36,6 +36,8 @@
 		E765BB7E1D525063002E9912 /* SportListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB7D1D525063002E9912 /* SportListViewController.xib */; };
 		E765BB801D560332002E9912 /* GameAndAnimeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB7F1D560332002E9912 /* GameAndAnimeListViewController.swift */; };
 		E765BB821D56037D002E9912 /* GameAndAnimeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB811D56037D002E9912 /* GameAndAnimeListViewController.xib */; };
+		E765BB841D560524002E9912 /* PoliticalAndEconomyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB831D560524002E9912 /* PoliticalAndEconomyListViewController.swift */; };
+		E765BB861D560555002E9912 /* PoliticalAndEconomyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB851D560555002E9912 /* PoliticalAndEconomyListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		E765BB7D1D525063002E9912 /* SportListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SportListViewController.xib; sourceTree = "<group>"; };
 		E765BB7F1D560332002E9912 /* GameAndAnimeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAndAnimeListViewController.swift; sourceTree = "<group>"; };
 		E765BB811D56037D002E9912 /* GameAndAnimeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameAndAnimeListViewController.xib; sourceTree = "<group>"; };
+		E765BB831D560524002E9912 /* PoliticalAndEconomyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticalAndEconomyListViewController.swift; sourceTree = "<group>"; };
+		E765BB851D560555002E9912 /* PoliticalAndEconomyListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoliticalAndEconomyListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 				E765BB771D524DB6002E9912 /* ComputerListViewController.swift */,
 				E765BB7B1D524FFE002E9912 /* SportListViewController.swift */,
 				E765BB7F1D560332002E9912 /* GameAndAnimeListViewController.swift */,
+				E765BB831D560524002E9912 /* PoliticalAndEconomyListViewController.swift */,
 				E765BB301D5222BC002E9912 /* ViewController.swift */,
 				E765BB451D52263E002E9912 /* ViewController2.swift */,
 				E765BB471D522650002E9912 /* ViewController3.swift */,
@@ -178,6 +183,7 @@
 				E765BB791D524E1E002E9912 /* ComputerListViewController.xib */,
 				E765BB7D1D525063002E9912 /* SportListViewController.xib */,
 				E765BB811D56037D002E9912 /* GameAndAnimeListViewController.xib */,
+				E765BB851D560555002E9912 /* PoliticalAndEconomyListViewController.xib */,
 				E765BB721D524957002E9912 /* Cell */,
 			);
 			name = View;
@@ -256,6 +262,7 @@
 				E765BB7A1D524E1E002E9912 /* ComputerListViewController.xib in Resources */,
 				E765BB361D5222BC002E9912 /* Assets.xcassets in Resources */,
 				E765BB821D56037D002E9912 /* GameAndAnimeListViewController.xib in Resources */,
+				E765BB861D560555002E9912 /* PoliticalAndEconomyListViewController.xib in Resources */,
 				E765BB691D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.xib in Resources */,
 				E765BB611D523448002E9912 /* TabPageViewController.xib in Resources */,
 				E765BB761D524A33002E9912 /* HealthAndMedicalListViewController.xib in Resources */,
@@ -280,6 +287,7 @@
 				E765BB481D522650002E9912 /* ViewController3.swift in Sources */,
 				E765BB681D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.swift in Sources */,
 				E765BB411D522549002E9912 /* UIColor.swift in Sources */,
+				E765BB841D560524002E9912 /* PoliticalAndEconomyListViewController.swift in Sources */,
 				E765BB631D523B03002E9912 /* BaseQuestionnaireListViewController.swift in Sources */,
 				E765BB441D5225A6002E9912 /* MainTabbarController.swift in Sources */,
 				E765BB6D1D523DA9002E9912 /* EntertainmentListViewController.swift in Sources */,

@@ -34,7 +34,8 @@ class MainTabbarController: UITabBarController {
         let vc3 = ComputerListViewController()
         let vc4 = SportListViewController()
         let vc5 = GameAndAnimeListViewController()
-        tc.tabItems = [(vc1, "エンタメ"), (vc2, "健康と医療"), (vc3, "コンピュータ"), (vc4, "スポーツ"), (vc5, "ゲームとアニメ")]
+        let vc6 = PoliticalAndEconomyListViewController()
+        tc.tabItems = [(vc1, "エンタメ"), (vc2, "健康と医療"), (vc3, "コンピュータ"), (vc4, "スポーツ"), (vc5, "ゲームとアニメ"), (vc6, "政治と経済")]
         tc.isInfinity = true
         var option = TabPageOption()
         option.currentColor = UIColor(red: 246/255, green: 175/255, blue: 32/255, alpha: 1.0)
