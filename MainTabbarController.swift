@@ -14,7 +14,7 @@ class MainTabbarController: UITabBarController {
     var secondView: ViewController2!
     var thirdView: ViewController3!
     var fourthView: ViewController!
-    var tc: TabPageViewController!
+    var tabPageViewController: TabPageViewController!
     var nav: UINavigationController?
     var nav2: UINavigationController?
     var nav3: UINavigationController?
@@ -28,46 +28,47 @@ class MainTabbarController: UITabBarController {
         thirdView = ViewController3()
         fourthView = ViewController()
         
-        let tc = TabPageViewController()
+        let tabPageViewController = TabPageViewController()
         let vc1 = EntertainmentListViewController()
         let vc2 = HealthAndMedicalListViewController()
         let vc3 = ComputerListViewController()
         let vc4 = SportListViewController()
         let vc5 = GameAndAnimeListViewController()
         let vc6 = PoliticalAndEconomyListViewController()
-        tc.tabItems = [(vc1, "エンタメ"), (vc2, "健康と医療"), (vc3, "コンピュータ"), (vc4, "スポーツ"), (vc5, "ゲームとアニメ"), (vc6, "政治と経済")]
-        tc.isInfinity = true
+        tabPageViewController.tabItems = [(vc1, "エンタメ"), (vc2, "健康と医療"), (vc3, "コンピュータ"), (vc4, "スポーツ"), (vc5, "ゲームとアニメ"), (vc6, "政治と経済")]
+        tabPageViewController.isInfinity = true
         var option = TabPageOption()
         option.currentColor = UIColor(red: 246/255, green: 175/255, blue: 32/255, alpha: 1.0)
-        tc.option = option
-        
-        
+        tabPageViewController.option = option
         
         // fontの設定
         let fontFamily: UIFont! = UIFont.systemFontOfSize(10)
+        
         //TabBarの背景色を変更する
         UITabBar.appearance().barTintColor = UIColor.hex("3ca97f", alpha: 1.0)
+        
         // 選択時の設定
         let selectedAttributes = [NSFontAttributeName: fontFamily, NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
         // タイトルテキストカラーの設定
         UITabBarItem.appearance().setTitleTextAttributes(selectedAttributes, forState: UIControlState.Selected)
+        
         // アイコンカラーの設定
         UITabBar.appearance().tintColor = UIColor.whiteColor()
         
         // 非選択時の設定
         let nomalAttributes = [NSFontAttributeName: fontFamily, NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
         /// タイトルテキストカラーの設定
         UITabBarItem.appearance().setTitleTextAttributes(nomalAttributes, forState: UIControlState.Normal)
         
-        
-        
         //表示するtabItemを指定
-        tc.tabBarItem = UITabBarItem(title: "答える", image: UIImage(named: "check_questionnaire_tab_icon.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "check_questionnaire_tab_icon.png"))
+        tabPageViewController.tabBarItem = UITabBarItem(title: "答える", image: UIImage(named: "check_questionnaire_tab_icon.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "check_questionnaire_tab_icon.png"))
         secondView.tabBarItem = UITabBarItem(title: "質問する", image: UIImage(named: "question_tab_icon.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "question_tab_icon.png"))
         thirdView.tabBarItem = UITabBarItem(title: "通知", image: UIImage(named: "alarm.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "result_tab@2.png"))
         fourthView.tabBarItem = UITabBarItem(title: "マイページ", image: UIImage(named: "user_tab.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "user_tab.png"))
         
-        nav = UINavigationController(rootViewController: tc)
+        nav = UINavigationController(rootViewController: tabPageViewController)
         nav2 = UINavigationController(rootViewController: secondView)
         nav3 = UINavigationController(rootViewController: thirdView)
         nav4 = UINavigationController(rootViewController: fourthView)
@@ -90,4 +91,3 @@ class MainTabbarController: UITabBarController {
     }
     
 }
-
