@@ -38,14 +38,14 @@ class MainTabbarController: UITabBarController {
         tabPageViewController.tabItems = [(vc1, "エンタメ"), (vc2, "健康と医療"), (vc3, "コンピュータ"), (vc4, "スポーツ"), (vc5, "ゲームとアニメ"), (vc6, "政治と経済")]
         tabPageViewController.isInfinity = true
         var option = TabPageOption()
-        option.currentColor = UIColor(red: 246/255, green: 175/255, blue: 32/255, alpha: 1.0)
+        option.currentColor = UIColor.hex("FF5730", alpha: 1.0)
         tabPageViewController.option = option
         
         // fontの設定
         let fontFamily: UIFont! = UIFont.systemFontOfSize(10)
         
         //TabBarの背景色を変更する
-        UITabBar.appearance().barTintColor = UIColor.hex("3ca97f", alpha: 1.0)
+        UITabBar.appearance().barTintColor = UIColor.hex("3FB9E3", alpha: 1.0)
         
         // 選択時の設定
         let selectedAttributes = [NSFontAttributeName: fontFamily, NSForegroundColorAttributeName: UIColor.whiteColor()]
