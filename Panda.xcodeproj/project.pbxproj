@@ -38,6 +38,17 @@
 		E765BB821D56037D002E9912 /* GameAndAnimeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB811D56037D002E9912 /* GameAndAnimeListViewController.xib */; };
 		E765BB841D560524002E9912 /* PoliticalAndEconomyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB831D560524002E9912 /* PoliticalAndEconomyListViewController.swift */; };
 		E765BB861D560555002E9912 /* PoliticalAndEconomyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB851D560555002E9912 /* PoliticalAndEconomyListViewController.xib */; };
+		E765BB881D560CEB002E9912 /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB871D560CEB002E9912 /* QuestionnaireViewController.swift */; };
+		E765BB8A1D560DAE002E9912 /* lineUpModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB891D560DAE002E9912 /* lineUpModalViewController.swift */; };
+		E765BB8C1D560DEB002E9912 /* lineUpModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB8B1D560DEB002E9912 /* lineUpModalViewController.xib */; };
+		E765BB8E1D560ED8002E9912 /* CustomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB8D1D560ED8002E9912 /* CustomAnimatedTransitioning.swift */; };
+		E765BB901D560F69002E9912 /* QuestionnaireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB8F1D560F69002E9912 /* QuestionnaireViewController.xib */; };
+		E765BB921D56105C002E9912 /* QuestionnaireResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB911D56105C002E9912 /* QuestionnaireResultViewController.swift */; };
+		E765BB941D561090002E9912 /* MeterGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB931D561090002E9912 /* MeterGraphView.swift */; };
+		E765BB961D56110A002E9912 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB951D56110A002E9912 /* CustomPresentationController.swift */; };
+		E765BB981D5611D8002E9912 /* QuestionnaireResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB971D5611D8002E9912 /* QuestionnaireResultViewController.xib */; };
+		E765BB9A1D5612D1002E9912 /* QuestionSelectModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB991D5612D1002E9912 /* QuestionSelectModalViewController.swift */; };
+		E765BB9C1D561321002E9912 /* QuestionSelectModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB9B1D561321002E9912 /* QuestionSelectModalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +85,17 @@
 		E765BB811D56037D002E9912 /* GameAndAnimeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameAndAnimeListViewController.xib; sourceTree = "<group>"; };
 		E765BB831D560524002E9912 /* PoliticalAndEconomyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticalAndEconomyListViewController.swift; sourceTree = "<group>"; };
 		E765BB851D560555002E9912 /* PoliticalAndEconomyListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoliticalAndEconomyListViewController.xib; sourceTree = "<group>"; };
+		E765BB871D560CEB002E9912 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireViewController.swift; path = ../QuestionnaireViewController.swift; sourceTree = "<group>"; };
+		E765BB891D560DAE002E9912 /* lineUpModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = lineUpModalViewController.swift; path = ../lineUpModalViewController.swift; sourceTree = "<group>"; };
+		E765BB8B1D560DEB002E9912 /* lineUpModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = lineUpModalViewController.xib; sourceTree = "<group>"; };
+		E765BB8D1D560ED8002E9912 /* CustomAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		E765BB8F1D560F69002E9912 /* QuestionnaireViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionnaireViewController.xib; sourceTree = "<group>"; };
+		E765BB911D56105C002E9912 /* QuestionnaireResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionnaireResultViewController.swift; sourceTree = "<group>"; };
+		E765BB931D561090002E9912 /* MeterGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeterGraphView.swift; sourceTree = "<group>"; };
+		E765BB951D56110A002E9912 /* CustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		E765BB971D5611D8002E9912 /* QuestionnaireResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionnaireResultViewController.xib; sourceTree = "<group>"; };
+		E765BB991D5612D1002E9912 /* QuestionSelectModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionSelectModalViewController.swift; sourceTree = "<group>"; };
+		E765BB9B1D561321002E9912 /* QuestionSelectModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionSelectModalViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +162,9 @@
 			isa = PBXGroup;
 			children = (
 				E765BB431D5225A6002E9912 /* MainTabbarController.swift */,
+				E765BB931D561090002E9912 /* MeterGraphView.swift */,
+				E765BB951D56110A002E9912 /* CustomPresentationController.swift */,
+				E765BB8D1D560ED8002E9912 /* CustomAnimatedTransitioning.swift */,
 			);
 			name = Tabbar;
 			sourceTree = "<group>";
@@ -154,6 +179,10 @@
 				E765BB7B1D524FFE002E9912 /* SportListViewController.swift */,
 				E765BB7F1D560332002E9912 /* GameAndAnimeListViewController.swift */,
 				E765BB831D560524002E9912 /* PoliticalAndEconomyListViewController.swift */,
+				E765BB871D560CEB002E9912 /* QuestionnaireViewController.swift */,
+				E765BB911D56105C002E9912 /* QuestionnaireResultViewController.swift */,
+				E765BB991D5612D1002E9912 /* QuestionSelectModalViewController.swift */,
+				E765BB891D560DAE002E9912 /* lineUpModalViewController.swift */,
 				E765BB301D5222BC002E9912 /* ViewController.swift */,
 				E765BB451D52263E002E9912 /* ViewController2.swift */,
 				E765BB471D522650002E9912 /* ViewController3.swift */,
@@ -184,6 +213,10 @@
 				E765BB7D1D525063002E9912 /* SportListViewController.xib */,
 				E765BB811D56037D002E9912 /* GameAndAnimeListViewController.xib */,
 				E765BB851D560555002E9912 /* PoliticalAndEconomyListViewController.xib */,
+				E765BB8B1D560DEB002E9912 /* lineUpModalViewController.xib */,
+				E765BB8F1D560F69002E9912 /* QuestionnaireViewController.xib */,
+				E765BB971D5611D8002E9912 /* QuestionnaireResultViewController.xib */,
+				E765BB9B1D561321002E9912 /* QuestionSelectModalViewController.xib */,
 				E765BB721D524957002E9912 /* Cell */,
 			);
 			name = View;
@@ -265,10 +298,14 @@
 				E765BB861D560555002E9912 /* PoliticalAndEconomyListViewController.xib in Resources */,
 				E765BB691D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.xib in Resources */,
 				E765BB611D523448002E9912 /* TabPageViewController.xib in Resources */,
+				E765BB981D5611D8002E9912 /* QuestionnaireResultViewController.xib in Resources */,
 				E765BB761D524A33002E9912 /* HealthAndMedicalListViewController.xib in Resources */,
+				E765BB9C1D561321002E9912 /* QuestionSelectModalViewController.xib in Resources */,
 				E765BB591D522AD0002E9912 /* TabView.xib in Resources */,
+				E765BB901D560F69002E9912 /* QuestionnaireViewController.xib in Resources */,
 				E765BB6F1D523E43002E9912 /* EntertainmentListViewController.xib in Resources */,
 				E765BB7E1D525063002E9912 /* SportListViewController.xib in Resources */,
+				E765BB8C1D560DEB002E9912 /* lineUpModalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +317,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E765BB7C1D524FFE002E9912 /* SportListViewController.swift in Sources */,
+				E765BB8E1D560ED8002E9912 /* CustomAnimatedTransitioning.swift in Sources */,
 				E765BB461D52263E002E9912 /* ViewController2.swift in Sources */,
+				E765BB921D56105C002E9912 /* QuestionnaireResultViewController.swift in Sources */,
+				E765BB9A1D5612D1002E9912 /* QuestionSelectModalViewController.swift in Sources */,
 				E765BB551D522AD0002E9912 /* TabPageOption.swift in Sources */,
 				E765BB311D5222BC002E9912 /* ViewController.swift in Sources */,
 				E765BB5F1D52340F002E9912 /* TabPageViewController.swift in Sources */,
 				E765BB481D522650002E9912 /* ViewController3.swift in Sources */,
+				E765BB881D560CEB002E9912 /* QuestionnaireViewController.swift in Sources */,
+				E765BB941D561090002E9912 /* MeterGraphView.swift in Sources */,
 				E765BB681D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.swift in Sources */,
 				E765BB411D522549002E9912 /* UIColor.swift in Sources */,
 				E765BB841D560524002E9912 /* PoliticalAndEconomyListViewController.swift in Sources */,
@@ -293,8 +335,10 @@
 				E765BB6D1D523DA9002E9912 /* EntertainmentListViewController.swift in Sources */,
 				E765BB781D524DB6002E9912 /* ComputerListViewController.swift in Sources */,
 				E765BB5B1D522B16002E9912 /* TabCollectionCell.swift in Sources */,
+				E765BB961D56110A002E9912 /* CustomPresentationController.swift in Sources */,
 				E765BB6B1D523CCB002E9912 /* Datacontent.swift in Sources */,
 				E765BB581D522AD0002E9912 /* TabView.swift in Sources */,
+				E765BB8A1D560DAE002E9912 /* lineUpModalViewController.swift in Sources */,
 				E765BB801D560332002E9912 /* GameAndAnimeListViewController.swift in Sources */,
 				E765BB2F1D5222BC002E9912 /* AppDelegate.swift in Sources */,
 				E765BB741D5249E2002E9912 /* HealthAndMedicalListViewController.swift in Sources */,

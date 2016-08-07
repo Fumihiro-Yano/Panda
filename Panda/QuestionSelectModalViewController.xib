@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionSelectModalViewController" customModule="Panda" customModuleProvider="target">
+            <connections>
+                <outlet property="checkingImageView" destination="Bp7-QG-vxe" id="6jq-cW-yIM"/>
+                <outlet property="selectedImageView" destination="1fY-PH-yHa" id="TXZ-P2-bsU"/>
+                <outlet property="view" destination="vYe-QO-vXq" id="0N5-F8-BlW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vYe-QO-vXq">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1fY-PH-yHa">
+                    <rect key="frame" x="-1" y="0.0" width="601" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="1fY-PH-yHa" secondAttribute="height" multiplier="601:600" id="5Ko-JK-Nlx"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bp7-QG-vxe">
+                    <rect key="frame" x="236" y="236" width="128" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="SOU-IG-BVh"/>
+                        <constraint firstAttribute="height" constant="128" id="Vau-an-qUs"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1fY-PH-yHa" firstAttribute="centerY" secondItem="vYe-QO-vXq" secondAttribute="centerY" id="3gK-ix-Uvq"/>
+                <constraint firstItem="Bp7-QG-vxe" firstAttribute="centerX" secondItem="1fY-PH-yHa" secondAttribute="centerX" id="7RI-1d-IGT"/>
+                <constraint firstItem="1fY-PH-yHa" firstAttribute="top" secondItem="vYe-QO-vXq" secondAttribute="top" id="9Tm-p3-g2c"/>
+                <constraint firstItem="1fY-PH-yHa" firstAttribute="centerX" secondItem="vYe-QO-vXq" secondAttribute="centerX" id="O2S-dn-Yma"/>
+                <constraint firstAttribute="bottom" secondItem="1fY-PH-yHa" secondAttribute="bottom" id="SWR-Tf-d4g"/>
+                <constraint firstItem="Bp7-QG-vxe" firstAttribute="centerY" secondItem="1fY-PH-yHa" secondAttribute="centerY" id="bRA-U7-drO"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

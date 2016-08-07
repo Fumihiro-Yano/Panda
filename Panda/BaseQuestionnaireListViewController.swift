@@ -83,9 +83,9 @@ class BaseQuestionnaireListViewController: UIViewController, UICollectionViewDat
     
     //セルが選択された時に呼び出される。
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-//        let baseQuestionnaireViewController: BaseQuestionnaireViewController = BaseQuestionnaireViewController()
-//        baseQuestionnaireViewController.indexRowAccessor = indexPath.row
-//        self.navigationController!.pushViewController(baseQuestionnaireViewController, animated: true)
+        let baseQuestionnaireViewController: QuestionnaireViewController = QuestionnaireViewController()
+        baseQuestionnaireViewController.indexRowAccessor = indexPath.row
+        self.navigationController!.pushViewController(baseQuestionnaireViewController, animated: true)
         print("Num: \(indexPath.row)")
     }
 }
