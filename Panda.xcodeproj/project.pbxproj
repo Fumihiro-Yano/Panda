@@ -49,6 +49,10 @@
 		E765BB981D5611D8002E9912 /* QuestionnaireResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB971D5611D8002E9912 /* QuestionnaireResultViewController.xib */; };
 		E765BB9A1D5612D1002E9912 /* QuestionSelectModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB991D5612D1002E9912 /* QuestionSelectModalViewController.swift */; };
 		E765BB9C1D561321002E9912 /* QuestionSelectModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E765BB9B1D561321002E9912 /* QuestionSelectModalViewController.xib */; };
+		E765BBA01D5A1142002E9912 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BB9F1D5A1142002E9912 /* Question.swift */; };
+		E765BBA21D5A11BD002E9912 /* QuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BBA11D5A11BD002E9912 /* QuestionRepository.swift */; };
+		E765BBA41D5A123B002E9912 /* QuestionRepositoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BBA31D5A123B002E9912 /* QuestionRepositoryData.swift */; };
+		E765BBA61D5A133E002E9912 /* QuestionUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765BBA51D5A133E002E9912 /* QuestionUsecase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +100,10 @@
 		E765BB971D5611D8002E9912 /* QuestionnaireResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionnaireResultViewController.xib; sourceTree = "<group>"; };
 		E765BB991D5612D1002E9912 /* QuestionSelectModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionSelectModalViewController.swift; sourceTree = "<group>"; };
 		E765BB9B1D561321002E9912 /* QuestionSelectModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionSelectModalViewController.xib; sourceTree = "<group>"; };
+		E765BB9F1D5A1142002E9912 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		E765BBA11D5A11BD002E9912 /* QuestionRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionRepository.swift; sourceTree = "<group>"; };
+		E765BBA31D5A123B002E9912 /* QuestionRepositoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionRepositoryData.swift; sourceTree = "<group>"; };
+		E765BBA51D5A133E002E9912 /* QuestionUsecase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionUsecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +138,10 @@
 			children = (
 				E765BB2E1D5222BC002E9912 /* AppDelegate.swift */,
 				E765BB421D52256F002E9912 /* Utility */,
+				E786B9261D60554700D64B34 /* Presentation */,
+				E786B9271D60565600D64B34 /* Domain */,
+				E786B92A1D60570700D64B34 /* Data */,
 				E765BB4D1D522A62002E9912 /* TabPage */,
-				E765BB711D524942002E9912 /* View */,
-				E765BB491D522852002E9912 /* Controller */,
 				E765BB351D5222BC002E9912 /* Assets.xcassets */,
 				E765BB371D5222BC002E9912 /* LaunchScreen.storyboard */,
 				E765BB3A1D5222BC002E9912 /* Info.plist */,
@@ -152,13 +161,13 @@
 		E765BB491D522852002E9912 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E765BB4B1D52289E002E9912 /* View */,
-				E765BB4A1D52287A002E9912 /* Tabbar */,
+				E765BB4B1D52289E002E9912 /* ViewController */,
+				E765BB4A1D52287A002E9912 /* TabbarController */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		E765BB4A1D52287A002E9912 /* Tabbar */ = {
+		E765BB4A1D52287A002E9912 /* TabbarController */ = {
 			isa = PBXGroup;
 			children = (
 				E765BB431D5225A6002E9912 /* MainTabbarController.swift */,
@@ -166,10 +175,10 @@
 				E765BB951D56110A002E9912 /* CustomPresentationController.swift */,
 				E765BB8D1D560ED8002E9912 /* CustomAnimatedTransitioning.swift */,
 			);
-			name = Tabbar;
+			name = TabbarController;
 			sourceTree = "<group>";
 		};
-		E765BB4B1D52289E002E9912 /* View */ = {
+		E765BB4B1D52289E002E9912 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				E765BB621D523B03002E9912 /* BaseQuestionnaireListViewController.swift */,
@@ -187,7 +196,7 @@
 				E765BB451D52263E002E9912 /* ViewController2.swift */,
 				E765BB471D522650002E9912 /* ViewController3.swift */,
 			);
-			name = View;
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		E765BB4D1D522A62002E9912 /* TabPage */ = {
@@ -229,6 +238,65 @@
 				E765BB671D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.xib */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		E786B9261D60554700D64B34 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E765BB711D524942002E9912 /* View */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		E786B9271D60565600D64B34 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E786B9291D6056D800D64B34 /* Repository */,
+				E786B9281D6056C500D64B34 /* Usecase */,
+				E765BB491D522852002E9912 /* Controller */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		E786B9281D6056C500D64B34 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				E765BBA51D5A133E002E9912 /* QuestionUsecase.swift */,
+			);
+			name = Usecase;
+			sourceTree = "<group>";
+		};
+		E786B9291D6056D800D64B34 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E765BBA11D5A11BD002E9912 /* QuestionRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		E786B92A1D60570700D64B34 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E786B92D1D60573C00D64B34 /* Entity */,
+				E786B92B1D60571F00D64B34 /* Repository */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		E786B92B1D60571F00D64B34 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E765BBA31D5A123B002E9912 /* QuestionRepositoryData.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		E786B92D1D60573C00D64B34 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E765BB9F1D5A1142002E9912 /* Question.swift */,
+			);
+			name = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +387,9 @@
 				E765BB7C1D524FFE002E9912 /* SportListViewController.swift in Sources */,
 				E765BB8E1D560ED8002E9912 /* CustomAnimatedTransitioning.swift in Sources */,
 				E765BB461D52263E002E9912 /* ViewController2.swift in Sources */,
+				E765BBA21D5A11BD002E9912 /* QuestionRepository.swift in Sources */,
 				E765BB921D56105C002E9912 /* QuestionnaireResultViewController.swift in Sources */,
+				E765BBA41D5A123B002E9912 /* QuestionRepositoryData.swift in Sources */,
 				E765BB9A1D5612D1002E9912 /* QuestionSelectModalViewController.swift in Sources */,
 				E765BB551D522AD0002E9912 /* TabPageOption.swift in Sources */,
 				E765BB311D5222BC002E9912 /* ViewController.swift in Sources */,
@@ -327,6 +397,7 @@
 				E765BB481D522650002E9912 /* ViewController3.swift in Sources */,
 				E765BB881D560CEB002E9912 /* QuestionnaireViewController.swift in Sources */,
 				E765BB941D561090002E9912 /* MeterGraphView.swift in Sources */,
+				E765BBA61D5A133E002E9912 /* QuestionUsecase.swift in Sources */,
 				E765BB681D523C20002E9912 /* BaseQuestionnaireListCollectionViewCell.swift in Sources */,
 				E765BB411D522549002E9912 /* UIColor.swift in Sources */,
 				E765BB841D560524002E9912 /* PoliticalAndEconomyListViewController.swift in Sources */,
@@ -337,6 +408,7 @@
 				E765BB5B1D522B16002E9912 /* TabCollectionCell.swift in Sources */,
 				E765BB961D56110A002E9912 /* CustomPresentationController.swift in Sources */,
 				E765BB6B1D523CCB002E9912 /* Datacontent.swift in Sources */,
+				E765BBA01D5A1142002E9912 /* Question.swift in Sources */,
 				E765BB581D522AD0002E9912 /* TabView.swift in Sources */,
 				E765BB8A1D560DAE002E9912 /* lineUpModalViewController.swift in Sources */,
 				E765BB801D560332002E9912 /* GameAndAnimeListViewController.swift in Sources */,

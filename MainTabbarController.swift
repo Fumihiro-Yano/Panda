@@ -11,7 +11,7 @@ import UIKit
 //UITabBarControllerを継承
 class MainTabbarController: UITabBarController {
     var firstView: ViewController!
-    var secondView: ViewController2!
+    var secondView: ViewController!
     var thirdView: ViewController3!
     var fourthView: ViewController!
     var tabPageViewController: TabPageViewController!
@@ -24,7 +24,7 @@ class MainTabbarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         firstView = ViewController()
-        secondView = ViewController2()
+        secondView = ViewController()
         thirdView = ViewController3()
         fourthView = ViewController()
         

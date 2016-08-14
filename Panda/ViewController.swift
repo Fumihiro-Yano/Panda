@@ -9,10 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var usecase: QuestionUsecase!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.blueColor()
+        let dataRepository = QuestionRepositoryData()
+        self.usecase = QuestionUsecase(repository: dataRepository)
+        let question = self.usecase.getQuestion(1)
+        print("\(question.title)")
+        print("\(question.desc)")
+        print("\(question.imageLeftUrl)")
+        print("\(question.imageRightUrl)")
     }
 
     override func didReceiveMemoryWarning() {
