@@ -16,12 +16,13 @@ class MeterGraphView: UIView {
     var maxMovingPoint:CGFloat!
     
     var meterWidth:CGFloat!
+    var contextHight:CGFloat!
+    
     var image: UIImage!
     var isFirstDrawView:Bool!
     var currentUpMeter:String!
     let sideMargin:CGFloat = 0.0
     let hundredPercent:CGFloat = 100.0
-    var contextHight:CGFloat = 100
     
     var count:Int = 0
     
@@ -33,10 +34,10 @@ class MeterGraphView: UIView {
     init(frame: CGRect,params:[Dictionary<String,AnyObject>]) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clearColor();
-        let myBoundSize: CGSize = UIScreen.mainScreen().bounds.size
         isFirstDrawView = true
+        meterWidth = frame.width
+        contextHight = frame.height
         _params = params
-        meterWidth = myBoundSize.width - (sideMargin * 2)
         _end_point = sideMargin
     }
     
@@ -124,7 +125,7 @@ class MeterGraphView: UIView {
             let value = CGFloat(dic["value"] as! Float)
             max += value;
         }
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, 0)
+        UIGraphicsBeginImageContextWithOptions(CGSizeMake(meterWidth, contextHight), false, 0)
         let context:CGContextRef = UIGraphicsGetCurrentContext()!;
         var num:Int = 0
         for dic : Dictionary<String,AnyObject> in _params {

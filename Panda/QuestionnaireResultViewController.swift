@@ -36,16 +36,18 @@ class QuestionnaireResultViewController: UIViewController {
         self.rightImage.image = UIImage(named: Datacontent().getImageName(self.indexRow!, imageSide: 1))
         self.titleLabel.text = Datacontent().getTitle(self.indexRow!)
         let meterGraphContentViewWidth = self.meterGraphContentView.frame.width
+        let meterGraphContentViewHight = self.meterGraphContentView.frame.height
         var params = [Dictionary<String,AnyObject>]()
         params.append(["value":5,"color":UIColor.hex("a93c66", alpha: 1.0)])
         params.append(["value":5,"color":UIColor.hex("3ca97f", alpha: 1.0)])
-        graphView = MeterGraphView(frame: CGRectMake(0, 0, meterGraphContentViewWidth, 80), params: params)
+        graphView = MeterGraphView(frame: CGRectMake(0, 0, meterGraphContentViewWidth, meterGraphContentViewHight * 2), params: params)
         let leftCount:Int = 10
         let rightCount:Int = 90
         leftMeterLabel.text = "A \(leftCount)票"
         rightMeterLabel.text = "B \(rightCount)票"
         self.meterGraphContentView.addSubview(graphView)
     }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
         //tabbarとCollectionViewの最後がかぶらないように
