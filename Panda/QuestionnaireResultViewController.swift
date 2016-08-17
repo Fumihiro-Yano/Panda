@@ -35,8 +35,8 @@ class QuestionnaireResultViewController: UIViewController {
         self.leftImage.image = UIImage(named: Datacontent().getImageName(self.indexRow!, imageSide: 0))
         self.rightImage.image = UIImage(named: Datacontent().getImageName(self.indexRow!, imageSide: 1))
         self.titleLabel.text = Datacontent().getTitle(self.indexRow!)
-        let meterGraphContentViewWidth = self.meterGraphContentView.frame.width
-        let meterGraphContentViewHight = self.meterGraphContentView.frame.height
+        let meterGraphContentViewWidth = UIScreen.mainScreen().bounds.size.width
+        let meterGraphContentViewHight = self.meterGraphContentView.bounds.height
         var params = [Dictionary<String,AnyObject>]()
         params.append(["value":5,"color":UIColor.hex("a93c66", alpha: 1.0)])
         params.append(["value":5,"color":UIColor.hex("3ca97f", alpha: 1.0)])
@@ -47,7 +47,6 @@ class QuestionnaireResultViewController: UIViewController {
         rightMeterLabel.text = "B \(rightCount)票"
         self.meterGraphContentView.addSubview(graphView)
     }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
         //tabbarとCollectionViewの最後がかぶらないように
@@ -59,8 +58,8 @@ class QuestionnaireResultViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         var params = [Dictionary<String,AnyObject>]()
-        params.append(["value":1,"color":UIColor.hex("a93c66", alpha: 1.0)])
-        params.append(["value":9,"color":UIColor.hex("3ca97f", alpha: 1.0)])
+        params.append(["value":9,"color":UIColor.hex("a93c66", alpha: 1.0)])
+        params.append(["value":1,"color":UIColor.hex("3ca97f", alpha: 1.0)])
         graphView.startAnimating(params)
     }
     

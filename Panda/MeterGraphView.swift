@@ -53,7 +53,7 @@ class MeterGraphView: UIView {
             let displayLink = CADisplayLink(target: self, selector: #selector(MeterGraphView.updateLeftMeter(_:)))
             displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
         }
-        else if (plusParams.movingMeter == "right") {
+        if (plusParams.movingMeter == "right") {
             value = plusParams.palams[0]["value"]! as! CGFloat
             maxMovingPoint = meterWidth - (meterWidth * (value/10))
             currentUpMeter = plusParams.movingMeter
@@ -95,16 +95,16 @@ class MeterGraphView: UIView {
     //メーターの変化値を取得するメソッド
     func getPlusParams(params:[Dictionary<String,AnyObject>]) -> (palams: [Dictionary<String,AnyObject>], movingMeter: String){
         var plusParams = [Dictionary<String,AnyObject>]()
-        var meter: String!
+        var movingMeter: String!
         if((params[0]["value"]! as! Int) >= (_params[0]["value"]! as! Int)) {
             plusParams.append(["value":params[0]["value"]! as! Int,"color":UIColor.hex("a93c66", alpha: 1.0)])
-            meter = "left"
+            movingMeter = "left"
         }
-        else if ((params[0]["value"]! as! Int) <= (_params[0]["value"]! as! Int)) {
+        if ((params[0]["value"]! as! Int) <= (_params[0]["value"]! as! Int)) {
             plusParams.append(["value":params[1]["value"]! as! Int,"color":UIColor.hex("3ca97f", alpha: 1.0)])
-            meter = "right"
+            movingMeter = "right"
         }
-        return (plusParams, meter)
+        return (plusParams, movingMeter)
     }
     
     func getCurrentImage() -> UIImage {
@@ -116,6 +116,18 @@ class MeterGraphView: UIView {
         return image!
     }
     
+    //直線を引きその時のエンドポイントを返すメソッド
+    func drawStraightLine(color:UIColor, context:CGContextRef, start_point:CGFloat, end_point:CGFloat) -> CGFloat {
+        let cgColor:CGColorRef = color.CGColor
+        CGContextSetStrokeColorWithColor(context, cgColor)
+        CGContextSetLineWidth(context, contextHight)
+        CGContextMoveToPoint(context, start_point, 0)
+        CGContextAddLineToPoint(context, end_point, 0)
+        CGContextClosePath(context)
+        CGContextStrokePath(context)
+        return end_point
+    }
+    
     //最初のグラフを作成するメソッド
     func drawFirstGraphView(rect: CGRect) {
         var start_point:CGFloat = sideMargin;
@@ -125,7 +137,7 @@ class MeterGraphView: UIView {
             let value = CGFloat(dic["value"] as! Float)
             max += value;
         }
-        UIGraphicsBeginImageContextWithOptions(CGSizeMake(meterWidth, contextHight), false, 0)
+        UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, 0)
         let context:CGContextRef = UIGraphicsGetCurrentContext()!;
         var num:Int = 0
         for dic : Dictionary<String,AnyObject> in _params {
@@ -134,19 +146,10 @@ class MeterGraphView: UIView {
             num += 1
             if(num == 1) {
                 //ここで片方のend_pointを変更点として取得している
-                print("\(num)回目")
                 _change_point = end_point
                 _end_point = _change_point
             }
-            let color:UIColor = dic["color"] as! UIColor
-            let cgColor:CGColorRef = color.CGColor
-            CGContextSetStrokeColorWithColor(context, cgColor)
-            CGContextSetLineWidth(context, contextHight)
-            CGContextMoveToPoint(context, start_point, 0)
-            CGContextAddLineToPoint(context, end_point, 0)
-            CGContextClosePath(context)
-            CGContextStrokePath(context)
-            start_point = end_point
+            start_point = drawStraightLine(dic["color"] as! UIColor,context: context,start_point: start_point,end_point: end_point)
         }
         image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -158,35 +161,17 @@ class MeterGraphView: UIView {
         var start_point:CGFloat = sideMargin;
         var end_point:CGFloat = start_point;
         let context:CGContextRef = UIGraphicsGetCurrentContext()!
-        //        self.getCurrentImage().drawInRect(self.bounds)
-        
         for dic : Dictionary<String,AnyObject> in _params {
-            let value = CGFloat(dic["value"] as! Float)
             self.count += 1
-            print("This is count",count)
-            print("This is value",value)
-            print("This is _end_point",_end_point)
             start_point = _change_point
             end_point = maxMovingPoint
-            if (currentUpMeter == "left") {
-                if(end_point > _end_point) {
+            if (currentUpMeter == "left" && end_point > _end_point) {
                     end_point = _end_point;
-                }
             }
-            else if (currentUpMeter == "right") {
-                if(end_point < _end_point) {
+            if (currentUpMeter == "right" && end_point < _end_point) {
                     end_point = _end_point;
-                }
             }
-            let color:UIColor = dic["color"] as! UIColor
-            let cgColor:CGColorRef = color.CGColor
-            CGContextSetStrokeColorWithColor(context, cgColor)
-            CGContextSetLineWidth(context, contextHight)
-            CGContextMoveToPoint(context, start_point, 0)
-            CGContextAddLineToPoint(context, end_point, 0)
-            CGContextClosePath(context)
-            CGContextStrokePath(context)
-            start_point = end_point
+            start_point = drawStraightLine(dic["color"] as! UIColor,context: context,start_point: start_point,end_point: end_point)
         }
     }
     
@@ -194,12 +179,11 @@ class MeterGraphView: UIView {
     override func drawRect(rect: CGRect) {
         if(isFirstDrawView == true) {
             drawFirstGraphView(rect)
+            isFirstDrawView = false
+            return
         }
-        else {
-            self.getCurrentImage().drawInRect(self.bounds)
-            drawPlusGraphView(rect)
-        }
-        isFirstDrawView = false
+        self.getCurrentImage().drawInRect(self.bounds)
+        drawPlusGraphView(rect)
     }
 }
 
