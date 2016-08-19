@@ -7,6 +7,10 @@
 //
 
 import UIKit
+protocol pushResuViewDelegate {
+    func pushQuestionnaireResultViewController()
+}
+
 class QuestionSelectModalViewController: UIViewController {
     @IBOutlet weak var selectedImageView: UIImageView!
     @IBOutlet weak var checkingImageView: UIImageView!
@@ -28,6 +32,7 @@ class QuestionSelectModalViewController: UIViewController {
             self.selecedImageTag = value
         }
     }
+    var delegate: pushResuViewDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +65,12 @@ class QuestionSelectModalViewController: UIViewController {
                 self.checkingImageView.transform = CGAffineTransformMakeScale(1, 1)
             }
         }
+    }
+    
+    //モーダルが非表示になった直後
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        delegate.pushQuestionnaireResultViewController()
     }
     
     override func didReceiveMemoryWarning() {

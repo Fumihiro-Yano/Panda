@@ -74,17 +74,13 @@ class QuestionnaireViewController: UIViewController {
         }
         
         let questionSelectModalViewController = QuestionSelectModalViewController()
+        questionSelectModalViewController.delegate = self
+        
         questionSelectModalViewController.modalPresentationStyle = .Custom
         questionSelectModalViewController.transitioningDelegate = self
         questionSelectModalViewController.indexRowAccessor = self.indexRow
         questionSelectModalViewController.selecedImageTagAccessor = selectedTag
         presentViewController(questionSelectModalViewController, animated: true, completion: nil)
-    }
-    
-    func pushQuestionnaireResultViewController() {
-        let baseQuestionnaireResultViewController: QuestionnaireResultViewController = QuestionnaireResultViewController()
-        baseQuestionnaireResultViewController.indexRowAccessor = self.indexRow
-        self.navigationController!.pushViewController(baseQuestionnaireResultViewController, animated: true)
     }
 }
 
@@ -101,7 +97,14 @@ extension QuestionnaireViewController {
     }
     
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        self.pushQuestionnaireResultViewController()
         return CustomAnimatedTransitioning(isPresent: false, imgView: tappedImage)
+    }
+}
+
+extension QuestionnaireViewController: pushResuViewDelegate {
+    func pushQuestionnaireResultViewController() {
+        let baseQuestionnaireResultViewController: QuestionnaireResultViewController = QuestionnaireResultViewController()
+        baseQuestionnaireResultViewController.indexRowAccessor = self.indexRow
+        self.navigationController!.pushViewController(baseQuestionnaireResultViewController, animated: true)
     }
 }
