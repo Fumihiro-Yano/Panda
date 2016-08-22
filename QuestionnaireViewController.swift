@@ -55,10 +55,14 @@ class QuestionnaireViewController: UIViewController {
     }
     
     @IBAction func openButtonTouchUpInside(sender: AnyObject) {
-        let lineupModalViewController = lineUpModalViewController()
-        lineupModalViewController.modalPresentationStyle = .Custom
-        lineupModalViewController.transitioningDelegate = self
-        presentViewController(lineupModalViewController, animated: true, completion: nil)
+//        let lineupModalViewController = lineUpModalViewController()
+//        lineupModalViewController.modalPresentationStyle = .Custom
+//        lineupModalViewController.transitioningDelegate = self
+//        presentViewController(lineupModalViewController, animated: true, completion: nil)
+        let questionImageZoomPageViewController = QuestionImageZoomPageViewController()
+        questionImageZoomPageViewController.modalPresentationStyle = .Custom
+        questionImageZoomPageViewController.transitioningDelegate = self
+        presentViewController(questionImageZoomPageViewController, animated: true, completion: nil)
     }
     
     //imageのタップイベント

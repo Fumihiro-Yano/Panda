@@ -8,12 +8,12 @@
 
 import UIKit
 
-class lineUpModalViewController: UIViewController {
+class LeftImageZoomModalViewController: UIViewController {
     
+    @IBOutlet weak var leftImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        self.leftImageView.image = UIImage(named: Datacontent().getImageName(2, imageSide: 0))
     }
     
     override func didReceiveMemoryWarning() {
